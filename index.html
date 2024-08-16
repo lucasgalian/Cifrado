@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="container_1">
+            <img src="Frame 6.png" class="logo" alt="Logo de Elatam">
+            <div class="presentacion">
+                <textarea type="text" id="valorDePalabra" placeholder="Ingrese el texto aqui" class="container__input"
+                    required></textarea>
+
+                <div class="terminos">
+                    <p>Solo letras minusculas y sin acentos</p>
+                </div>
+
+                <div class="botones">
+                    <button onclick="btnEncriptar();" id="cifrar" class="container_encriptado">Encriptar</button>
+                    <button onclick="btnDesencriptar();" class="container_desencriptado" id="decifrar"
+                        href="about.html">Desencriptar</button>
+                </div>
+        </section>
+        <section class="container_2">
+            <img src="Muñeco.png" id="logo_desencriptado">
+            <textarea name="resultado" id="mensajeFinal" cols="40" rows="20" class="mensaje" disabled></textarea>
+            <div class="caja_info">
+                <h2 id="contenido" class="contenido"><b>Ningun mensaje fue <br>
+                        encontrado</b><br></h2>
+                <p id="contenido_dos"> Ingresar el texto que desea
+                    Encriptar o Desencriptar</p>
+                <button onclick="copiar();" class="copia" id="copia">Copiar</button>
+            </div>   
+        </section>
+        </div>
+    </main>
+</body>
+<script src="app.js">
+
+</script>
+
+</html>
